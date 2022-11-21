@@ -1,0 +1,649 @@
+/*================ Normal desktop :992px.==================== */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+    .header-right-menu ul li a,
+    .header-menu ul li a {
+        padding: 5px
+    }
+    .site-logo {
+        margin-top: 13px
+    }
+    .banner-welcome form .video-banner-input {
+        width: 40%
+    }
+    .top-job-company-image h3,
+    .single-browse-company h3 {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #body-background {
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      width: 100%;
+      z-index: 2000;
+      margin-top: -10px;
+    }
+    .slicknav_btn {
+        margin-top: 0;
+    }
+    .navIcon {
+      display: block;
+    }
+    .menuRight {
+      display: flex;
+      justify-items: center;
+      justify-content: space-between;
+    }
+    .menuRight span {
+      font-size: 30px;
+      cursor: pointer;
+      color: var(--bs-primary);
+      display: none;
+    }
+    header.jobguru-header-area.stick-top.forsticky.sticky .menuRight span {
+        color: var(--bs-primary);
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2001;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .blogRight .tab-content li {
+      margin-bottom: 1.5rem !important;
+    }
+    .sidenav a {
+      text-decoration: none;
+      line-height: 24px;
+      padding: 10px 20px;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: #4a6375 !important;
+      display: block;
+      transition: 0.3s;
+    }
+    .jobguru-header-area.page-header a,
+    .jobguru-header-area.page-header a {
+        color: #fff !important;
+        text-align: center;
+    }
+    .sidenav a:hover {
+      background-color: var(--bs-primary);
+      color: #fff !important;
+    }
+  
+    .sidenav .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      font-size: 36px;
+      margin-left: 50px;
+      transition: 0.5s;
+    }
+    .sidenav ul li {
+      display: block;
+    }
+    .sidenav .jobguru-btn {
+      border-radius: 0;
+    }
+    .sidenav ul li a {
+      padding: 10px 30px !important;
+    }
+    .ourBlog {
+      margin-top: 1.5rem;
+    }
+    .header-right-menu ul li a {
+        color: #000;
+        text-align: center;
+    }
+  }
+
+/*================ Tablet desktop :768px.==================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menuRight span {
+      display: block;
+    }
+    .jobguru-responsive-menu {
+        display: block;
+        width: 50%;
+        z-index: 99999
+    }
+    .site-logo {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+    .banner-text {
+        top: 20%;
+    }
+    .jobguru-video-area {
+        padding-top: 70px;
+    }
+    .header-right-menu ul li {
+        display: block;
+    }
+    .header-right-menu .jobguru-btn {
+        border: 0;
+    }
+    .slicknav_nav ul {
+        margin: 0 10px;
+    }
+    .slicknav_nav,
+    .slicknav_nav ul {
+        overflow: inherit;
+    }
+    .slicknav_nav .slicknav_arrow {
+        display: none;
+    }
+    .slicknav_nav li {
+        border-bottom: 0;
+    }
+    .has-children__down:after {
+        color: #000;
+    }
+    /*  */
+    .jobguru-responsive-menu {
+        display: block;
+        width: 50%;
+        z-index: 99999
+    }
+    .site-logo {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+    .banner-text {
+        top: 20%;
+    }
+    .jobguru-video-area {
+        padding-top: 70px;
+    }
+    .header-right-menu ul li {
+        display: block;
+    }
+    .header-right-menu .jobguru-btn {
+        border: 0;
+    }
+    .slicknav_nav ul {
+        margin: 0 10px;
+    }
+    .slicknav_nav,
+    .slicknav_nav ul {
+        overflow: inherit;
+    }
+    .slicknav_nav .slicknav_arrow {
+        display: none;
+    }
+    .slicknav_nav li {
+        border-bottom: 0;
+    }
+    .has-children__down:after {
+        color: #000;
+    }
+    /*  */
+    .banner-search h2 {
+        font-size: 40px
+    }
+    .single-candidate-widget-2 a.jobguru-btn-2 {
+        padding: 10px
+    }
+    .single-footer-widget {
+        margin: 30px 0
+    }
+    .banner-welcome form {
+        width: 100%
+    }
+    .banner-welcome form .video-banner-input {
+        width: 36%
+    }
+    .price-standard .price-value::before {
+        top: -54px
+    }
+    .pagination-box-row {
+        margin: 0 auto 30px
+    }
+    .page-header .slicknav_menu .slicknav_icon-bar {
+        background-color: rgb(0 174 244)
+    }
+    .available-count h4 {
+        text-align: center
+    }
+    .breadcromb-box h3 {
+        font-size: 35px
+    }
+    .single-input label span {
+        display: none
+    }
+    .single-candidate-action a.bookmarks,
+    .single-candidate-action a.candidate-contact {
+        padding: 10px
+    }
+    .nav-tabs .nav-item {
+        margin: 3px 0
+    }
+    .job-grid-right {
+        margin-top: 30px
+    }
+    .search-category-box h3 {
+        font-size: 16px
+    }
+    .candidate-text-bottom {
+        display: block
+    }
+    .candidate-text-bottom {
+        text-align: left;
+    }
+    .candidate-text-box {
+        margin-bottom: 10px
+    }
+    .about-main-box {
+        width: 70%
+    }
+    .footer-top::after {
+        width: 100%
+    }
+    .contact-box {
+        width: 70%;
+    }
+    .container-news-menu .navbar.navbar-expand-lg {
+        padding-left: 1.75rem !important;
+        padding-right: 1.75rem !important;
+    }
+}
+
+
+/*================== small mobile :320px. ===================*/
+
+@media (max-width: 767px) {
+    .menuRight span {
+      display: block;
+    }
+    .page-header .slicknav_menu .slicknav_icon-bar {
+        background-color: #00AEF4;
+    }
+    .slicknav_menu {
+        background: #111827;
+    }
+    .jobguru-responsive-menu {
+        display: block
+    }
+    .stick-top {
+        position: static;
+    }
+    img.non-stick-logo {
+        display: none;
+    }
+    .jobguru-header-area.stick-top .stick-logo {
+        display: block
+    }
+    .jobguru-header-area.stick-top.sticky .slicknav_menu .slicknav_icon-bar,
+    .jobguru-header-area.home-3-page .slicknav_menu .slicknav_icon-bar {
+        background-color: rgb(0 174 244);
+    }
+    #nav1 {
+        display: flex;
+        padding: 0 1rem;
+    }
+    header ul li a {
+        color: #000000;
+    }
+    .banner-text {
+        top: 10%;
+    }
+    .single-footer-widget {
+        margin: 30px 0;
+    }
+    .jobguru-video-area {
+        padding-top: 70px;
+    }
+    .jobguru-header-area {
+        padding: 10px 0;
+    }
+    .jobguru-header-area .container-fluid {
+        padding: 0;
+    }
+    .banner-search h2 {
+        font-size: 40px;
+    }
+    .banner-search h4 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+    }
+    .site-logo img {
+        width: 5rem;
+    }
+    .slicknav_nav {
+        position: absolute;
+        background: #111827;
+        border-top: 0;
+        box-shadow: none;
+        width: 100%;
+        top: 64px;
+        margin-left: -5px;
+        box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 5%);
+    }
+    .slicknav_nav li {
+        border-bottom: 0;
+    }
+    .header-right-menu ul li {
+        display: block;
+    }
+    .header-right-menu .jobguru-btn {
+        border: 0;
+    }
+    .slicknav_nav ul {
+        margin: 0 10px;
+    }
+    .slicknav_nav a {
+        text-align: left;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        margin: 0;
+    }
+    .slicknav_nav,
+    .slicknav_nav ul {
+        overflow: inherit;
+    }
+    .slicknav_nav .slicknav_arrow {
+        display: none;
+    }
+    .has-children__down:after {
+        color: #000;
+    }
+    /*  */
+    .mob-hide {
+        display: none
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow {}
+    .site-heading {
+        width: 100%
+    }
+    .site-heading h2 {
+        font-size: 25px;
+        line-height: 35px
+    }
+    .single-footer-widget {
+        margin: 30px 0
+    }
+    .banner-welcome h4 {
+        font-size: 22px;
+        line-height: 40px
+    }
+    .top-search-cat {
+        display: none
+    }
+    .no-pad-right {
+        padding-right: 15px
+    }
+    .no-pad-left {
+        padding-left: 15px
+    }
+    .no-pad-all {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .browse-job-head-option,
+    .job-browse-search {
+        display: block
+    }
+    .job-browse-action {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px
+    }
+    label.styled {
+        text-align: left
+    }
+    .nav-tabs .nav-item {
+        margin: 3px 0
+    }
+    .submit-resume-box {
+        width: 100%
+    }
+    .feild-flex-2 {
+        display: block
+    }
+    .single-resume-feild.feild-flex-2 .single-input:last-child {
+        margin-left: 0
+    }
+    .single-resume-feild.feild-flex-2 .single-input:first-child {
+        margin-right: 0
+    }
+    .dashboard-right,
+    .chat-board-right {
+        margin-top: 30px
+    }
+    .single-candidate-box {
+        display: block
+    }
+    .resume-box h3 {
+        font-size: 20px
+    }
+    .page-header .slicknav_menu .slicknav_icon-bar {
+        background-color: rgb(0 174 244)
+    }
+    .footer-top::after {
+        width: 100%
+    }
+    .contact-box {
+        width: 100%;
+    }
+    /**news:cat/slug**/
+    .post_type12 .post_img {
+        width: 100% !important;
+        height: 220px !important;
+    }
+    .post_type12 .post_img img {
+        height: 100%;
+    }
+    .post_type12 .single_post_text {
+        width: 100% !important;
+        padding: 15px 10px;
+    }
+    .container-news-menu .navbar.navbar-expand-lg {
+        padding-left: 1.75rem !important;
+        padding-right: 1.75rem !important;
+    }
+    .jobguru-header-area.page-header a,
+    .jobguru-header-area.page-header a {
+        text-align: left;
+    }
+}
+
+
+/* ======================Large Mobile :480px.================== */
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .jobguru-responsive-menu {
+        display: block
+    }
+    .jobguru-video-area {
+        height: 500px;
+    }
+    /*  */
+    .section_30 {
+        padding-top: 20px !important;
+    }
+    .section_70 {
+        padding-top: 60px !important;
+    }
+    .section_80 {
+        padding-top: 75px !important;
+    }
+    .section_90 {
+        padding-top: 85px !important;
+    }
+    .section_30,
+    .section_70,
+    .section_80,
+    .section_90 {
+        padding-bottom: 40px !important;
+    }
+    .banner-search h2 {
+        display: none
+    }
+    .banner-search h4 {
+        display: none
+    }
+    .banner-form-box {
+        background: transparent;
+        display: block
+    }
+    .banner-form-input {
+        display: block;
+        border-radius: 5px;
+        padding: 5px;
+        background: #fff none repeat scroll 0 0;
+        margin-top: 8px
+    }
+    .site-heading {
+        width: 100%;
+    }
+    .site-heading h2 {
+        font-size: 25px;
+        line-height: 35px
+    }
+    .slicknav_menu .slicknav_icon-bar {
+        background-color: #fff
+    }
+    .no-pad-right {
+        padding-right: 15px
+    }
+    .no-pad-left {
+        padding-left: 15px
+    }
+    .no-pad-all {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    label.styled {
+        text-align: left
+    }
+    .job-browse-action .dropdown-menu {
+        min-width: 100%
+    }
+    .job-browse-action .dropdown-toggle:after {
+        top: 30px
+    }
+    .nav-tabs .nav-item {
+        margin: 3px 0
+    }
+    .submit-resume-box {
+        width: 100%
+    }
+    .resume-box h3 {
+        font-size: 20px
+    }
+    .footer-top::after {
+        width: 100%
+    }
+    .page-header .slicknav_menu .slicknav_icon-bar {
+        background-color: rgb(0 174 244)
+    }
+    .job-post-command {
+        text-align: center!important
+    }
+    .job-post-command button.btn.btn-primary.robo-btn {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+    .job-post-command button.btn.btn-secondary.robo-btn {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        width: 100% !important;
+    }
+    span.select2-selection__arrow {}
+    .flex-wrap-mb {
+        flex-direction: column !important;
+    }
+    .contact-box {
+        width: 100%;
+    }
+    .search-banner-single-slider {
+        height: 200px;
+    }
+    .container-news-menu .navbar.navbar-expand-lg {
+        padding-left: 1.75rem !important;
+        padding-right: 1.75rem !important;
+    }
+}
+
+@media (max-width:767px) {
+    .h-m-none:not(.show) {
+        display: none
+    }
+    .bar-filter {
+        display: block
+    }
+    .search-banner-single-slider {
+        height: 200px;
+    }
+    .f-job-left-menu-bar-show {
+        display: block !important;
+    }
+    .f-job-left-menu-bar-none {
+        display: none !important;
+    }
+    .container-news-menu .navbar.navbar-expand-lg {
+        width: 100%;
+        padding-left: 1.75rem !important;
+        padding-right: 1.75rem !important;
+    }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+    .page-item .page-link {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .page-item {
+        display: none;
+    }
+    .page-item:nth-of-type(3) {
+        position: relative;
+        padding-right: 50px;
+    }
+    .page-item:nth-of-type(3)::after {
+        content: "...";
+        position: absolute;
+        font-size: 25px;
+        top: 0;
+        left: 45px;
+    }
+    .page-item:nth-child(-n+3),
+    .page-item:nth-last-child(-n+3) {
+        display: block;
+    }
+    .page-item:nth-child(-n+3) .page-link,
+    .page-item:nth-last-child(-n+3) .page-link {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .page-item:nth-last-child(-n+4)::after {
+        content: none;
+    }
+    .f-job-paging nav .pagination {
+        display: flex!important;
+        flex-wrap: wrap!important;
+        justify-content: center!important
+    }
+    #divPostPaginator .pagination {
+        display: flex!important;
+        flex-wrap: wrap!important;
+        justify-content: center!important
+    }
+}
