@@ -1,12 +1,30 @@
+
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("body-background").style.height = "100%";
+  if (x.matches) { // If media query matches
+    document.getElementById("mySidenav").style.width = "100%";
+    $('body').removeClass('stop-scrolling')
+  } else {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("body-background").style.height = "100%";
+    $('body').addClass('stop-scrolling')
+  }
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("body-background").style.height = "0";
+  if (x.matches) { // If media query matches
+    document.getElementById("mySidenav").style.width = "100% !important";
+  } else {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("body-background").style.height = "0";
+    $('body').removeClass('stop-scrolling')
+  }
 }
+
+var x = window.matchMedia("(min-width: 992px)")
+openNav(x)
+closeNav(x)
+x.addListener(openNav)
+x.addListener(closeNav)
 
 $(document).ready(function () {
   var lastScrollTop = 0;

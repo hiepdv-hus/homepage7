@@ -18,7 +18,7 @@
 ==================================================*/
 
 body {
-  background-color: #F4F6F8;
+  background-color: #fff;
   color: #6b739c;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -94,18 +94,34 @@ p {
 }
 .jobguru-banner-btn {
   display: inline-block;
-  padding: 10px 50px;
+  padding: 8px 30px;
   text-transform: capitalize;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border-radius: 4px;
   transition: .3s;
-  background: var(--bs-primary);
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 1000px;
 }
 .jobguru-banner-btn:hover {
   box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
     color: #fff;
+    background-color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+}
+.jobguru-btn-left {
+  display: inline-block;
+  padding: 8px 50px;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: .3s;
+  background-color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
 }
 .jobguru-btn {
   display: inline-block;
@@ -118,7 +134,7 @@ p {
   transition: .3s;
   border: 1px solid var(--bs-primary);
 }
-.jobguru-btn:hover {
+.jobguru-btn:hover, .jobguru-btn-left:hover {
   background-color: var(--bs-primary);
   color: #fff;
   box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
@@ -141,7 +157,7 @@ p {
 }
 header .signIn-btn {
   display: inline-block;
-  padding: 3px 20px;
+  padding: 4px 20px;
   text-transform: capitalize;
   color: var(--bs-primary) !important;
   font-family: "Montserrat", sans-serif;
@@ -150,15 +166,20 @@ header .signIn-btn {
 }
 header .signUp-btn {
   display: inline-block;
-  padding: 3px 20px;
+  padding: 4px 20px;
   text-transform: capitalize;
   color: var(--bs-primary) !important;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  border-radius: 4px;
-  border: 2px solid var(--bs-primary);
+  border-radius: 8px;
+  border: 1px solid var(--bs-primary);
   margin-left: 15px;
 }
+header .signUp-btn:hover {
+  background-color: var(--bs-primary);
+  color: #fff !important;
+}
+
 header .jobguru-btn:hover {
   background: var(--bs-primary) none repeat scroll 0 0;
 }
@@ -198,7 +219,7 @@ header .jobguru-btn:hover {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   color: #000;
 }
 
@@ -734,8 +755,6 @@ header ul li a {
 .jobguru-banner-area {
   position: relative;
   width: 100%;
-  /* background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
-  padding: 100px 0 10px; */
   margin-top: 56px;
 }
 /* .banner__overlay {
@@ -760,9 +779,18 @@ header ul li a {
   font-weight: 900;
   font-size: 3.5rem;
 }
+.subscriber__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
 .banner__sub-title {
   color: #fff;
   font-size: 1.25rem;
+}
+.subscriber__sub-title {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .banner-single-slider {
@@ -922,7 +950,7 @@ header ul li a {
 ==================================================*/
 
 .feature-job-area {
-  background: rgb(185 183 183 / 30%) none repeat scroll 0 0;
+  background: #f7f7f9 none repeat scroll 0 0;
 }
 .feature-job-companies {
   background: var(--bs-background);
@@ -1117,11 +1145,18 @@ i.fa-heart {
 .job-company-name {
   font-family: "Montserrat", sans-serif;
   max-width: 215px !important;
-  color: var(--bs-primary);
+  color: #fff;
   line-height: 1.5;
   font-weight: 600;
   font-size: 16px;
   text-overflow: ellipsis;
+}
+.scholarship .job-company-name {
+  color: var(--bs-primary);
+}
+.scholarship .shadow-min2 {
+  background: #FAFAFC;
+  box-shadow: none;
 }
 .text-muted a {
   color: #fff;
@@ -1138,6 +1173,15 @@ i.fa-heart {
   box-shadow: 0 0 0 2pxvar(--bs-primary);
 }
 
+.shadow-min2:hover .academic-job-content a{
+  color: var(--bs-primary) !important;
+}
+.shadow-min2:hover .academic-job-img img {
+  width: 100%;
+}
+.shadow-min2:hover .job-title {
+  color: var(--bs-primary) !important;
+}
 a.read-more {
   padding: 5px 15px;
   font-weight: 700;
@@ -1767,6 +1811,10 @@ span.text-gray {
   color: #000;
   font-size: 14px;
 }
+
+#subs_img {
+  height: 390px;
+}
 /*================================================
 Responsive
 ==================================================*/
@@ -1808,19 +1856,14 @@ Responsive
   .menuRight {
     display: flex;
     justify-items: center;
+    align-items: center;
   }
   .menuRight span {
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
+    color: var(--bs-primary);
     display: none;
   }
-  .jobguru-banner-area {
-    padding-bottom: 50px;
-  }
-  a.signUp-btn {
-    color: #fff !important;
-}
   header.jobguru-header-area.stick-top.forsticky.sticky .menuRight span {
     color: var(--bs-primary)
   }
@@ -1891,13 +1934,11 @@ Responsive
 .jobguru-header-area.stick-top.sticky .header-menu ul li a {
   color: #4a6375;
 }
-
 .jobguru-header-area.stick-top.sticky .header-menu ul li a:after {
   color: #4a6375;
 }
   .menuRight span {
     display: block;
-    padding-top: 10px;
   }
   .jobguru-responsive-menu {
     display: block;
@@ -1945,10 +1986,26 @@ Responsive
     text-align: center;
     margin-top: 2rem;
   }
+  
+  .banner__title {
+    font-size: 1.75rem;
+  }
+  .banner__sub-title {
+    font-size: 0.875rem;
+}
 }
 
 @media (max-width: 767px) {
-  .jobguru-btn {
+  .banner__image img {
+    height: 250px;
+  }
+.banner__title {
+  font-size: 1.75rem;
+}
+.country-col {
+  width: 50%;
+}
+  .jobguru-btn, .jobguru-btn-left {
     display: block;
     margin: 0 !important;
     margin-top: 20px !important;
@@ -1968,7 +2025,6 @@ Responsive
   }
   .menuRight span {
     display: block;
-    padding-top: .5rem;
   }
   .jobguru-responsive-menu {
     display: block;
@@ -1998,7 +2054,6 @@ Responsive
   }
   .jobguru-header-area {
     padding: 10px 0;
-    padding-top: 5px;
   }
   .jobguru-header-area .container-fluid {
     padding: 0;
@@ -2013,7 +2068,7 @@ Responsive
     font-weight: 500;
   }
   .site-logo img {
-    width: 2rem;
+    width: 3.5rem;
   }
   .slicknav_nav {
     position: absolute;
@@ -2061,6 +2116,9 @@ Responsive
   .slicknav_menu .slicknav_icon-bar {
     background-color: rgb(0 174 244);
   }
+  #subs_img {
+    height: 200px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -2074,15 +2132,6 @@ Responsive
     display: block;
     text-align: center;
   }
-  /* .featured_company .top-company-list .company-list-details > h3 {
-    line-height: 30px;
-  }
-  .featured_company .company-list-details p,
-  a {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  } */
   .featured_company .top-company-list .company-list-logo {
     width: 100%;
     background: #ffff;
