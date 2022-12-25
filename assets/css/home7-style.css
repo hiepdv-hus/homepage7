@@ -1860,6 +1860,9 @@ Responsive
     z-index: 2000;
     margin-top: -10px;
   }
+  .header-right-menu ul li {
+    padding: 5px 10px;
+}
   .jobguru-banner-area {
     padding-bottom: 5px;
 }
@@ -1911,11 +1914,6 @@ Responsive
     color: #4a6375;
     display: block;
     transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    background-color: var(--bs-primary);
-    color: #fff;
   }
 
   .sidenav .closebtn {
