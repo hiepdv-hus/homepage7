@@ -675,6 +675,12 @@ header ul li a {
   color: #000;
   transition: 0.2s;
 }
+header ul li.active a.has-children-link::after {
+  width: 100%;
+}
+header ul li.active a.has-children-link {
+  color: var(--bs-primary);
+}
 .header-right-menu ul li{
   padding: 0;
 }
@@ -756,6 +762,7 @@ header ul li a {
   position: relative;
   width: 100%;
   margin-top: 56px;
+  padding-bottom: 2px;
 }
 /* .banner__overlay {
   background: transparent linear-gradient(180deg, #2F221C 0%, #0A0A15 100%) 0% 0% no-repeat padding-box;
@@ -810,6 +817,11 @@ header ul li a {
 }
 .banner-text .load-more {
   text-align: left;
+}
+.jobguru-banner-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .banner-search h1 {
   color: #fff;
@@ -1847,6 +1859,9 @@ Responsive
     z-index: 2000;
     margin-top: -10px;
   }
+  .jobguru-banner-area {
+    padding-bottom: 5px;
+}
   .collapse:not(.show) {
     display: none;
   }
@@ -2119,6 +2134,13 @@ Responsive
   #subs_img {
     height: 200px;
   }
+  
+  header.header-static-top {
+    top: -60px !important;
+  }
+  header.header-fixed-top {
+    top: 0 !important;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -2136,11 +2158,5 @@ Responsive
     width: 100%;
     background: #ffff;
     margin-bottom: 10px;
-  }
-  header.header-static-top {
-    display: none;
-  }
-  header.header-fixed-top {
-    display: block;
   }
 }

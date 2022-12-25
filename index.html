@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="jobguru-header-area stick-top forsticky">
+    <header id="header" class="jobguru-header-area stick-top forsticky">
         
         <div class="menu-animation">
             <div id="body-background"></div>
@@ -51,26 +51,26 @@
                                         <div class="col-lg-7">
                                             <ul>
                                                 <li class="active has-children">
-                                                    <a href="#">Job</a>
+                                                    <a class="has-children-link" href="#">Job</a>
                                                 </li>
                                                 <li class=" has-children">
-                                                    <a href="#">Employer</a>
+                                                    <a class="has-children-link" href="#">Employer</a>
                                                 </li>
                                                 <li class="has-children">
-                                                    <a href="#">Blog</a>
+                                                    <a class="has-children-link" href="#">Blog</a>
                                                 </li>
                                                 <li class="has-children">
-                                                    <a href="#">News</a>
+                                                    <a class="has-children-link" href="#">News</a>
                                                 </li>
                                                 <li class="has-children">
-                                                    <a href="#">Resource</a>
+                                                    <a class="has-children-link" href="#">Resource</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-5">
                                             <div class="header-right-menu">
                                                 <ul>
-                                                    <li class="has-children"><a href="#" class="signIn-btn">sign in</a></li>
+                                                    <li class="has-children"><a href="#" class="has-children-link signIn-btn">sign in</a></li>
                                                     <li class="has-children"><a href="#" class="signUp-btn">sign up</a></li>
                                                 </ul>
                                             </div>
@@ -89,7 +89,7 @@
     <!-- Banner Area Start -->
     <section class="jobguru-banner-area">
         <div class="banner__image">
-            <img src="./assets/img/banner.png" alt="Post a Job For Academic Gates">
+            <img width="100%" src="./assets/img/banner.png" alt="Post a Job For Academic Gates">
             <div class="banner__overlay"></div>
             <div class="banner__text">
                 <h1 class="banner__title">
@@ -110,6 +110,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="jobguru-banner-bottom">
+            <img width="100%" src="./assets/img/Subtract.png">
         </div>
     </section>
         <!-- <img class="jobguru-banner-bottom" width="100%" src="./assets/img/banner-bottom.png"/> -->
@@ -244,7 +247,7 @@
     <!-- Categories End -->
 
     <!-- Featured Jobs Start -->
-    <section class="feature-job-area section_50 featuredJob">
+    <section class="section_50 featuredJob">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-0 mb-md-6">
@@ -538,14 +541,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -556,21 +551,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -579,14 +573,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -597,21 +583,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -619,15 +604,7 @@
                 <div class="col-12 col-lg-4 col-md-6 d-flex feature-job-body">
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
-                            <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="job-item">                              
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -638,21 +615,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -661,14 +637,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -679,21 +647,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -702,14 +669,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -720,21 +679,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
-                                            </div>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -743,14 +701,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -761,21 +711,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -784,14 +733,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -802,21 +743,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -825,14 +765,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -843,21 +775,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -866,14 +797,6 @@
                     <div class="card border-1 mb-4 shadow-min2">
                         <div class="card-body pt-7">
                             <div class="job-item">
-                                <div class="job-item__name d-flex align-content-center">
-                                    <a href="">Research Position</a>
-                                    <div class="ms-auto job-item__heart">
-                                        <a href="">
-                                            <i class="fa fa-heart-o"></i>
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="job-item__content">
                                     <div class="top-company-list">
                                         <div class="d-flex flex-wrap">
@@ -884,21 +807,20 @@
                                                 <a href="#" class="text-decoration-off job-company-name text-black">
                                                     Assistant Research Techni (at the rank of Senior Research)
                                                 </a>
+                                                <div class="mt-3">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-briefcase me-2"></i>83 open position
+                                                        </p>
+                                                        <p class="text-muted mb-0">
+                                                            <i class="fa fa-map-marker me-2"></i>England
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item-footer-date mt-auto p-3 pt-0 border-0">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-map-marker me-2"></i>England
-                                </p>
-                                
-                                <p class="text-muted mr-2 mb-0">
-                                    <i class="fa fa-clock-o me-2"></i>Closing in 7 days
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -922,7 +844,7 @@
 
     
     <!--  -->
-    <section class="section_50 featuredJob feature-job-area">
+    <section class="section_50 featuredJob">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-0 mb-md-6">
@@ -1251,7 +1173,7 @@
     
 
     <!-- News Start -->
-    <section class="section_50 feature-job-area">
+    <section class="section_50">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-0 mb-md-6">

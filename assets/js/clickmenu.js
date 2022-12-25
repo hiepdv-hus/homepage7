@@ -38,3 +38,17 @@ $(document).ready(function () {
     lastScrollTop = currentScrollTop;
   });
 });
+
+
+// var matcheTM = window.matchMedia("(max-width: 991px)")
+//   var prevScrollpos = window.pageYOffset;
+//   window.onscroll = function() {
+//     var currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos && matcheTM) {
+//       document.getElementById("header").style.top = "0";
+//     } else {
+//       document.getElementById("header").style.top = "-60px";
+//     }
+//     prevScrollpos = currentScrollPos;
+//   }
+  
