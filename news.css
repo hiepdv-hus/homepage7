@@ -6,8 +6,8 @@
 }
 
 :root {
-    --bs-primary: #2A66DB !important;
-    --bs-background: #0E164E !important;
+    --bs-primary: #0063F7 !important;
+    --bs-background: #030615 !important;
     --bs-violet: #791cc6 !important;
   }
 
@@ -408,7 +408,7 @@ img {
 }
 
 .forsticky {
-    background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
+    background: var(--bs-background);
     position: absolute;
     left: 0;
     top: 0;
@@ -426,7 +426,7 @@ img {
     position: fixed;
     left: 0;
     top: 0;
-    background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
+    background: var(--bs-background);
     -ms-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -448,11 +448,8 @@ header,
 .site-logo {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 35px;
-    margin-right: 20px;
-    margin-top: 5px;
     position: relative;
-    z-index: 99999
+    z-index: 99999;
 }
 
 .site-logo img {
@@ -475,7 +472,6 @@ header {
 }
 
 header ul {
-    margin: 5px 0 0;
     padding: 0;
     text-align: center;
 }
@@ -620,7 +616,7 @@ header ul li:hover ul li:hover ul {
 
 .header-right-menu ul li a {
     display: block;
-    padding: 8px 15px;
+    padding: 5px 10px;
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500
@@ -661,16 +657,15 @@ header .jobguru-btn:hover {
 }
 .post-jobs {
     display: inline-block;
-      padding: 8px 25px;
-      text-transform: capitalize;
-      color: #fff;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      background: transparent;
-      border-radius: 4px;
-      background: var(--bs-primary);
-      border-radius: 99px;
-  }
+    padding: 5px 20px !important;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid var(--bs-primary);
+}
   
   .post-jobs:hover {
     background: #3454f1d5 none repeat scroll 0 0;
@@ -779,7 +774,7 @@ header .jobguru-btn:hover {
 ==================================================*/
 
 .footer-top {
-    background: linear-gradient(248.78deg, #050C38 8.36%, #0E164E 103.63%);
+    background: var(--bs-background);
     color: #8d8e92;
     position: relative;
     z-index: 1;
@@ -910,7 +905,8 @@ header .jobguru-btn:hover {
   }
   
   .footer-copyright {
-    background: #090F37;
+    background: var(--bs-background);
+    border-top: 1px solid #8d8e92;
     color: #8d8e92;
     padding: 30px 0;
 }

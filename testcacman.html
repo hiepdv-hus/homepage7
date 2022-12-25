@@ -19,91 +19,63 @@
     <!--Slicknav css-->
     <link rel="stylesheet" href="assets/css/slicknav.min.css">
     <!--style css-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nsapp.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="responsive.css">
     <!-- <link rel="stylesheet" href="nsapp.css"> -->
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body cz-shortcut-listen="true">
 
-    <header class="jobguru-header-area stick-top forsticky page-header sticky header-static-top">
+    <header id="header" class="jobguru-header-area stick-top forsticky">
 <div class="menu-animation">
-    <div class="container-fluid" id="nav1">
+    <div id="body-background"></div>
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3 menuRight">
                 <div class="site-logo">
                     <a href="https://beta.roboexpress.net">
-                        <img src="https://beta.roboexpress.net/assets/16/img/logo-2.png?v=202200822" alt="Robo Express - Beta" width="96" loading="lazy">
+                        <img src="https://beta.roboexpress.net/assets/38/img/logo.svg?v=202200822" alt="Fundgates - Beta" class="non-stick-logo">
+                        <img src="https://beta.roboexpress.net/assets/38/img/logo.svg?v=202200822" alt="Fundgates - Beta" class="stick-logo">
                     </a>
                 </div>
-                <div class="jobguru-responsive-menu"><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <ul>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/job/find-jobs" role="menuitem">Job</a>
-                    </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/company/find-company" role="menuitem">Employer</a>
-                    </li>
-                    <li class="active">
-                        <a href="https://beta.roboexpress.net/blog" role="menuitem">Blog</a>
-                    </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/news" role="menuitem">News</a>
-                    </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=RESOURCE" role="menuitem">Resource</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-5">
-                <div class="header-right-menu">
-                    <ul>
-                <li>
-                                <a href="https://beta.roboexpress.net/blog-post/post/create" class="post-jobs" role="menuitem">Post Blog</a>
-                        </li>
-                    <li><a href="https://beta.roboexpress.net/login" class="signIn-btn" role="menuitem"><i class="fa fa-lock"></i>Sign in</a></li>
-    <li><a href="https://beta.roboexpress.net/registration" class="signUp-btn" role="menuitem"><i class="fa fa-user"></i>Sign up</a></li>
-</ul>
+                <div>
+                    <span onclick="openNav()" class="navIcon">☰</span>
                 </div>
-            </div>
-        </div>
-    </ul></div></div>
+
             </div>
             <div class="col-lg-9">
-                <nav class="header-menu sidenav" id="mySidenav">
+                <nav class="header-menu sidenav" id="mySidenav" style="width: 100%;">
 <a href="javascript:void(0)" class="closebtn navIcon" onclick="closeNav()">×</a>
 <nav id="navigation">
     <ul id="jobguru_navigation">
         <div class="row align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <ul>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/job/find-jobs">Job</a>
+                    <li class="has-children ">
+                        <a href="https://beta.roboexpress.net/job/find-jobs" class="has-children-link">Scholarship</a>
                     </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/company/find-company">Employer</a>
+                    <li class="has-children ">
+                        <a href="https://beta.roboexpress.net/company/find-company" class="has-children-link">University</a>
                     </li>
-                    <li class="active">
-                        <a href="https://beta.roboexpress.net/blog">Blog</a>
+                    <li class="has-children ">
+                        <a href="https://beta.roboexpress.net/blog" class="has-children-link">Blog</a>
                     </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/news">News</a>
+                    <li class="has-children active">
+                        <a href="https://beta.roboexpress.net/news" class="has-children-link">News</a>
                     </li>
-                    <li class="">
-                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=RESOURCE">Resource</a>
+                    <li class="has-children ">
+                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=RESOURCE" class="has-children-link">Resource</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <div class="header-right-menu">
                     <ul>
                 <li>
-                                <a href="https://beta.roboexpress.net/blog-post/post/create" class="post-jobs">Post Blog</a>
+                                <a href="https://beta.roboexpress.net/news-post/post/create" class="post-jobs mr-5">Post news</a>
                         </li>
-                    <li><a href="https://beta.roboexpress.net/login" class="signIn-btn"><i class="fa fa-lock"></i>Sign in</a></li>
-    <li><a href="https://beta.roboexpress.net/registration" class="signUp-btn"><i class="fa fa-user"></i>Sign up</a></li>
+                    <li class="has-children"><a href="https://beta.roboexpress.net/login" class="has-children-link signIn-btn">Sign in</a></li>
+    <li class="has-children"><a href="https://beta.roboexpress.net/registration" class="signUp-btn">Sign up</a></li>        
 </ul>
                 </div>
             </div>
@@ -116,407 +88,548 @@
     </div>
 </div>
 </header>
-    <style type="text/css">
-/* Blog */
-.blog-grid {
-display: flex;
-flex-wrap: wrap;
-}
-.blog-grid div.col-md-4 {
-margin-bottom: 30px;
-}
-.blog-grid div.col-md-6 {
-margin-bottom: 30px;
-}
-.blog-grid article {
-height: 100%;
-}
-.single-post .author-details {
-border-top:none;
-padding:0px 0px 20px 0px;
-}
-
-.pop-out {
-display: none;
-}
-.pop-out.active {
-display: block;
-}
-.blog-search {
-position: relative;
-}
-.blog-search > input {
-position: absolute;
-margin-left: -2px;
-border: 1px solid #16b85e;
-top: 0px;
-right: -9px;
-height: 31px;
-font-size: 12px;
-padding: 0px 10px;
-}
-
-nav.blog-categories {
-display: inline-block;
-line-height: 28px;
-}
-
-nav.blog-categories a {
-display: inline-block;
-text-transform: uppercase;
-font-size: 13px;
-margin-right: 20px;
-color:#333;
-font-weight: bold;
-cursor: pointer;
-transition: color .5s;
-/* border-bottom: 2px solid transparent; */
-}
-
-nav.blog-categories a:hover,
-nav.blog-categories a.active {
-color:#16b85e;
-border-bottom: 2px solid #16b85e;
-}
-
-@media  only screen and (max-width: 960px) {
-nav.blog-categories {
-    margin-bottom: 10px;
-}
-.blog-search {
-    float:left !important;
-    display: grid;
-    grid-template-columns: auto 30px;
-    grid-template-areas: "textbox button";
-}
-.blog-search > input {
-    position: initial;
-    display: block !important;
-    grid-area: textbox;
-    width: 140px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-.blog-search > .btn {
-    grid-area: button;
-    margin-left: -3px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-}
-/*end of blog*/
-</style>
-<section class="news-area section_30">
-<div class="container pt-20">
-    <div class="container pl-0">
+<div class="section_40 bg-white">
+    <div class="container">
         <div class="row">
-            <div class="col-md-9">
-                                <nav class="blog-categories">
-                    <a class="active" href="https://beta.roboexpress.net/blog">All stories</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=ANNOUNCE">Products &amp; Services</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=PHD">PhD Sharing</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=EVENT">Indeed events</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=TIP">Career advice
-</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=EXPERIENCE">Experiences</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=CASESTUDY">Case Studies</a>
-                                        <a href="https://beta.roboexpress.net/blog?cat%5B%5D=RESOURCE">Resource</a>
-                                  </nav>
-                              </div>
-
-            <div class="col-md-3">
-              <div id="divBlogSearch" class="blog-search pull-right mr-5">
-                    <a class="btn btn-primary btn-sm pl-2 pr-2 pull-right" style="right: -39px;position: absolute;"><i class="fa fa-search"></i></a>
-                    <input type="search" id="keyword" name="keyword" placeholder="Search" value="">
-                    <input type="hidden" name="sel_cat" id="sel_cat" value="">
-              </div>
-            </div>
-            <div class="col-md-2 hidden">
-                    <a href="#" class="btn btn-primary btn-sm pl-5 pr-5 pull-right"><i class="fa fa-plus"></i> Share your story</a>
-            </div>
+            
         </div>
     </div>
 </div>
-</section>
-    <section class="news-area section_30">
-<div class="container">
-  <div id="grid_blog" class="row">
-                  <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/7-study-tips-to-help-learning-stick/308?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=TonyStarky">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_67c0f300-7e00-11ec-9027-47116ebd045c.jpeg" alt="7 study tips to help learning stick" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/7-study-tips-to-help-learning-stick/308?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=TonyStarky">
-        <h3 class="text-dark">7 study tips to help learning stick</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>January 25, 2023
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/new-regulation-on-sorting-trash-hopes-to-improve-waste-management/385?utm_medium=blog&amp;utm_source=EVENT&amp;utm_campaign=teste45">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://api.roboexpress.net/api/fileupload/show/20/19/blog/img_16613941201yYeQJXvBE.png" alt="New regulation on sorting trash hopes to improve waste management" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/new-regulation-on-sorting-trash-hopes-to-improve-waste-management/385?utm_medium=blog&amp;utm_source=EVENT&amp;utm_campaign=teste45">
-        <h3 class="text-dark">New regulation on sorting trash hopes to improve waste management</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>August 25, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/doing-phd-in-sweden/15?utm_medium=blog&amp;utm_source=EXPERIENCE&amp;utm_campaign=SvenJohanson">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_e0141840-3454-11eb-b8d2-a19319874baf.jpeg" alt="Doing PhD in Sweden" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/doing-phd-in-sweden/15?utm_medium=blog&amp;utm_source=EXPERIENCE&amp;utm_campaign=SvenJohanson">
-        <h3 class="text-dark">Doing PhD in Sweden</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 15, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/what-is-a-common-living/369?utm_medium=blog&amp;utm_source=CASESTUDY&amp;utm_campaign=LiubovKior">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://api.roboexpress.net/api/fileupload/show/10/35/blog/img_thumb_1655310499YBoPWgIgTc.png" alt="What is a common living" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/what-is-a-common-living/369?utm_medium=blog&amp;utm_source=CASESTUDY&amp;utm_campaign=LiubovKior">
-        <h3 class="text-dark">What is a common living</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 15, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/for-a-brighter-future-early-education/192?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Nomi">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/20548/img_07175360-b8b0-11eb-aa65-35a0d440f8ae.jpeg" alt="For A Brighter Future – Early Education" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/for-a-brighter-future-early-education/192?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Nomi">
-        <h3 class="text-dark">For A Brighter Future – Early Education</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 15, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/how-to-find-study-materials-for-ccnp-enterprise/376?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=SowmiaR">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_42a74580-e3c1-11ec-beca-d56ad470e42f.jpeg" alt="How to find study materials for CCNP Enterprise?" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/how-to-find-study-materials-for-ccnp-enterprise/376?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=SowmiaR">
-        <h3 class="text-dark">How to find study materials for CCNP Enterprise?</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 04, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/things-to-consider-before-choosing-an-education-software/352?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=EricaJones">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_e5057e50-b7d3-11ec-ba66-198a90d4c45f.jpeg" alt="Things to Consider Before Choosing an Education Software" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/things-to-consider-before-choosing-an-education-software/352?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=EricaJones">
-        <h3 class="text-dark">Things to Consider Before Choosing an Education Software</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 02, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/how-can-past-papers-help-with-your-child-s-icas-assessments/204?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=EricaJones">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_47a40af0-cddc-11eb-8e55-634dfb6822a0.jpeg" alt="How Can Past Papers Help With Your Child's ICAS Assessments?" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/how-can-past-papers-help-with-your-child-s-icas-assessments/204?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=EricaJones">
-        <h3 class="text-dark">How Can Past Papers Help With Your Child's ICAS Assessments?</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 02, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/how-to-prepare-for-the-lsat/375?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Fallon">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/19951/img_066233d0-e12e-11ec-a9a8-158f4c86aca2.jpeg" alt="How To Prepare For The LSAT" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/how-to-prepare-for-the-lsat/375?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Fallon">
-        <h3 class="text-dark">How To Prepare For The LSAT</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 01, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/physics-mathematics-and-social-studies-successful-learning-olga-gutsul-s-online-school/374?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=PRNews">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_1abb9300-dfff-11ec-800b-e176751321b9.jpeg" alt="Physics, Mathematics and Social Studies Successful Learning: Olga Gutsul's Online School" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/physics-mathematics-and-social-studies-successful-learning-olga-gutsul-s-online-school/374?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=PRNews">
-        <h3 class="text-dark">Physics, Mathematics and Social Studies Successful Learning: Olga Gutsul's Online School</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>June 01, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/top-9-passive-income-streams-to-save-for-college/230?utm_medium=blog&amp;utm_source=EXPERIENCE&amp;utm_campaign=Amy">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_f27e3ed0-f5c2-11eb-aabe-fb63176c6190.jpeg" alt="Top 9 Passive Income Streams to Save for College" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/top-9-passive-income-streams-to-save-for-college/230?utm_medium=blog&amp;utm_source=EXPERIENCE&amp;utm_campaign=Amy">
-        <h3 class="text-dark">Top 9 Passive Income Streams to Save for College</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>May 29, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-                <!-- Blog Item Start -->
-        <div class="col-12 col-lg-3 col-md-6 d-flex  mb-2 mb-md-6">
-<div class="card card-blog border-0 mb-4 mb-lg-0 shadow-min2">
-  <a href="https://beta.roboexpress.net/blog/7-tricks-tips-to-attract-more-instagram-likes-in-2022/373?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=LarryHenderson">
-     <div class="card-img-top d-flex align-items-center card-img-customize-parent">
-        <img src="https://www.academicgates.com/images/postjobs/93/img_62638840-ddd5-11ec-9b1a-9592c9f4226b.jpeg" alt="7 Tricks &amp; Tips To Attract More Instagram Likes In 2022" class="card-img-top news-img-obj news-img-absolute card-img-customize" onerror="this.src='https://beta.roboexpress.net/assets/16/img/no-photo.png'">
-     </div>
-  </a>
-  <div class="card-body pb-3 pt-7">
-     <a class="news-item-title" href="https://beta.roboexpress.net/blog/7-tricks-tips-to-attract-more-instagram-likes-in-2022/373?utm_medium=blog&amp;utm_source=ANNOUNCE&amp;utm_campaign=LarryHenderson">
-        <h3 class="text-dark">7 Tricks &amp; Tips To Attract More Instagram Likes In 2022</h3>
-        <p class="news-short"></p>
-     </a>
-  </div>
-  <div class="item-footer-date mt-auto">
-     <p class="text-muted mr-2 mb-0"><i class="far fa-clock mr-2"></i>May 27, 2022
-     </p>
-  </div>
-</div>
-</div>
-        <!-- Blog Item End -->
-          </div>
-
-  <div class="row">
-     <div class="col-md-12">
-        <div class="load-more">
-                 <!-- start paging -->
-              <div class="row">
-                <div class="col-sm-12">
-                    <div class="clearfix"></div>
-                    <!-- Infinity Loadmore Button -->
-                    <div id="load-next-blogs" class="pt-0 pb-0">
-                        <a href="https://beta.roboexpress.net/blog?page=2" rel="noindex, nofollow" class="btn btn-outline-primary rounded-pill px-7">Load more blog <i class="fa fa-angle-down"></i></a>
-
-                    </div>
-                </div>
-              </div>
-              <!-- end paging -->
+    <section class="pages-area pt-0 pb-0  page-area-news-menu">
+<div class="container container-news-menu">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid container-fluid-news-menu justify-content-lg-between justify-content-center">
+            <div class="nav-scroller mb-3">
+                <nav class="nav nav-underline" aria-label="Secondary navigation">
+                                            <a class="nav-link news-active" href="https://beta.roboexpress.net/news"><i class="fas fa-home pr-2"></i>Home</a>
+                                                                </nav>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <div class="input-group">
+                    <input type="search" class="form-control" id="keyword" name="keyword" placeholder="Keywords" aria-label="Keywords" aria-describedby="btn_search_news">
+                    <button class="btn btn-outline-primary" type="button" id="btn_search_news" name="btn_search_news"><i class="fas fa-search"></i></button>
+                  </div>
+            </div>
         </div>
-     </div>
-  </div>
+    </nav>
 </div>
 </section>
+    <section class="pages-area pt-7 pb-10" style="height: auto !important;">
+ <div class="container" style="height: auto !important;">
+     <div class="row mb-7" style="height: auto !important;">
+         <div class="col-md-7 col-lg-8 mb-10">
+             <h2 class="widget-title">Editors' Picks</h2>
+             <div class="row">
+                 <div class="col-lg-6">
+    <div class="single_post post_type3">
+        <div class="post_img">
+            <img src="https://www.volocopter.com/wp-content/uploads/feature-images.jpeg" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" height="230px" loading="lazy">
+        
+        </div>
+        <div class="single_post_text">
+            <h4>
+                <a href="https://beta.roboexpress.net/news/story/volocopter-collaborates-with-microsoft-on-voloiq-aerospace-cloud-project/191">Volocopter Collaborates with Microsoft on VoloIQ Aerospace Cloud Project</a>
+                                </h4>
+            <div class="space-10"></div>
+            <p class="post-p">Redmond, USA/Bruchsal, Germany (17 May 2022) – Today, Volocopter, the pioneer of urban air mobility (UAM), announced a strategic collaboration with Microsoft to develop an aerospace cloud system in Microsoft Azure that will address the nascent cloud computing requirements for eVTOLs, UAM, and autonomous aviation.
+Once primed for commercial use, Azure will support the digital platform VoloIQ, the operating system...</p>
+        </div>
+    </div>
+</div>
+                    <div class="col-lg-6">
+                <div class="single_post widgets_small">
+    <div class="post_img">
+        <div class="img_wrap">
+            <a href="https://beta.roboexpress.net/news/story/anybotics-cognite-accenture-enable-real-end-to-end-robotic-inspection-solutions/192">
+                <img src="https://beta.roboexpress.net/assets/38/img/no-photo.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a href="https://beta.roboexpress.net/news/story/anybotics-cognite-accenture-enable-real-end-to-end-robotic-inspection-solutions/192">ANYbotics, Cognite &amp; Accenture Enable Real End-to-End Robotic Inspection Solutions</a>
+                        </h4>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+                <div class="single_post widgets_small">
+    <div class="post_img">
+        <div class="img_wrap">
+            <a href="https://beta.roboexpress.net/news/story/universal-robots-conquers-new-automation-frontiers-at-automate-2022/186">
+                <img src="https://www.universal-robots.com/img/Universal-Robots_favicon.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a href="https://beta.roboexpress.net/news/story/universal-robots-conquers-new-automation-frontiers-at-automate-2022/186">Universal Robots Conquers New Automation Frontiers at Automate 2022</a>
+                        </h4>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+                <div class="single_post widgets_small">
+    <div class="post_img">
+        <div class="img_wrap">
+            <a href="https://beta.roboexpress.net/news/story/blog-a-safety-moment-to-remember/190">
+                <img src="https://www.volocopter.com/wp-content/uploads/Safety_First_CoreValue-2.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a href="https://beta.roboexpress.net/news/story/blog-a-safety-moment-to-remember/190">#Blog: A Safety Moment to Remember</a>
+                        </h4>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+                <div class="single_post widgets_small">
+    <div class="post_img">
+        <div class="img_wrap">
+            <a href="https://beta.roboexpress.net/news/story/volocopters-4-seater-aircraft-takes-first-flight/187">
+                <img src="https://www.volocopter.com/wp-content/uploads/20220607_VoloConnect-Release-Image-4-scaled.jpg" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a href="https://beta.roboexpress.net/news/story/volocopters-4-seater-aircraft-takes-first-flight/187">Volocopter’s 4-Seater Aircraft Takes First Flight</a>
+                        </h4>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+                <div class="single_post widgets_small">
+    <div class="post_img">
+        <div class="img_wrap">
+            <a href="https://beta.roboexpress.net/news/story/universal-robots-opens-100th-training-center/185">
+                <img src="https://www.universal-robots.com/media/1824373/website-version_umbraco-03_2021_academy_launch_kit_-11.jpg?width=950" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a href="https://beta.roboexpress.net/news/story/universal-robots-opens-100th-training-center/185">Universal Robots opens 100th training center</a>
+                        </h4>
+    </div>
+</div>
+        </div>
+             </div>
 
+                          </div>
+         <div class="col-md-5 col-lg-4" style="height: auto !important;">
+             <div class="mb-10">
+                <!-- News - Verical Ads 01 -->
+                 <!-- NS - Vertical -->
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-4140691985442484" data-ad-slot="8861332143" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 280px; width: 416px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:416px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="416" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4140691985442484&amp;output=html&amp;h=280&amp;slotname=8861332143&amp;adk=1562927725&amp;adf=740929224&amp;pi=t.ma~as.8861332143&amp;w=416&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1671987991&amp;rafmt=1&amp;format=416x280&amp;url=https%3A%2F%2Fbeta.roboexpress.net%2Fnews&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS4xMjUiLFtdLGZhbHNlLG51bGwsIjY0IixbWyJOb3Q_QV9CcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTA4LjAuNTM1OS4xMjUiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMDguMC41MzU5LjEyNSJdXSxmYWxzZV0.&amp;dt=1671987990868&amp;bpp=2&amp;bdt=872&amp;idt=634&amp;shv=r20221207&amp;mjsv=m202212070101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D68d4df7153a89162-224be061b7d80015%3AT%3D1670077712%3AS%3DALNI_MZUJj9ZTPV2A37W3ioxhwJBXK4vqg&amp;gpic=UID%3D00000b88c9b06513%3AT%3D1670077712%3ART%3D1671984090%3AS%3DALNI_MZ1_kMZ-GO9_FbeITJtc6YCRuwxNQ&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=3740722254707&amp;frm=20&amp;pv=1&amp;ga_vid=716343474.1670077713&amp;ga_sid=1671987991&amp;ga_hid=1475164430&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=9&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=974&amp;ady=180&amp;biw=1483&amp;bih=880&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759842%2C42531706%2C44778780%2C31071276%2C44780792&amp;oid=2&amp;pvsid=363476049546132&amp;tmod=1077827541&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fbeta.roboexpress.net%2Fblog%3Fcat%255B%255D%3DRESOURCE&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1040%2C1500%2C880&amp;vis=1&amp;rsz=o%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=yZWJskOVJA&amp;p=https%3A//beta.roboexpress.net&amp;dtd=644" data-google-container-id="a!2" data-google-query-id="CO_X6tKglfwCFcULXAodXgoKtg" data-load-complete="true"></iframe></div></ins>
+<script>
+ (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+             </div>
+             <h2 class="widget-title">Latest news</h2>
+             <div class="single_post widgets_small type8">
+    <div class="post_img">
+        <div class="img_wrap">
+            <img src="https://www.parrot.com/favicon.ico" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a target="_blank" href="https://beta.roboexpress.net/news/story/freeflight-7-and-anafi-ai-4th-major-update-is-now-available/592">FreeFlight 7 and ANAFI Ai 4th major update is now available</a>
+                        </h4>
+    <div class="date-label">3 days ago</div>
+    </div>
+    <div class="type8_count">
+        <h2>1</h2>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+    <div class="single_post widgets_small type8">
+    <div class="post_img">
+        <div class="img_wrap">
+            <img src="https://www.parrot.com/favicon.ico" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a target="_blank" href="https://beta.roboexpress.net/news/story/parrot-anafi-usa-chosen-by-the-spanish-naval-aviation/591">Parrot ANAFI USA chosen by the Spanish Naval Aviation</a>
+                        </h4>
+    <div class="date-label">3 days ago</div>
+    </div>
+    <div class="type8_count">
+        <h2>2</h2>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+    <div class="single_post widgets_small type8">
+    <div class="post_img">
+        <div class="img_wrap">
+            <img src="https://brincdrones.com/wp-content/themes/bdrones/assets/images/favicon/apple-touch-icon.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a target="_blank" href="https://beta.roboexpress.net/news/story/will-huddler-joins-brinc-as-vice-president-of-public-safety/590">Will Huddler Joins BRINC as Vice President of Public Safety</a>
+                        </h4>
+    <div class="date-label">3 days ago</div>
+    </div>
+    <div class="type8_count">
+        <h2>3</h2>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+    <div class="single_post widgets_small type8">
+    <div class="post_img">
+        <div class="img_wrap">
+            <img src="https://brincdrones.com/wp-content/themes/bdrones/assets/images/favicon/apple-touch-icon.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a target="_blank" href="https://beta.roboexpress.net/news/story/de-escalation-tools-reimagine-police-response/589">De-escalation Tools Reimagine Police Response</a>
+                        </h4>
+    <div class="date-label">3 days ago</div>
+    </div>
+    <div class="type8_count">
+        <h2>4</h2>
+    </div>
+</div>
+    <div class="space-15"></div>
+<div class="border_black"></div>
+<div class="space-15"></div>
+    <div class="single_post widgets_small type8">
+    <div class="post_img">
+        <div class="img_wrap">
+            <img src="https://brincdrones.com/wp-content/themes/bdrones/assets/images/favicon/apple-touch-icon.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+        </div>
+    </div>
+    <div class="single_post_text">
+        <h4>
+            <a target="_blank" href="https://beta.roboexpress.net/news/story/brinc-launches-global-rescue-network/588">BRINC Launches Global Rescue Network</a>
+                        </h4>
+    <div class="date-label">3 days ago</div>
+    </div>
+    <div class="type8_count">
+        <h2>5</h2>
+    </div>
+</div>
 
+             <div class="mt-10">
+<h2 class="widget-title">Featured jobs</h2>
+<div class="card  border-0   bg-transparent   shadow-min3  mb-7">
+    <div class="card-body  bg-transparent ">
+                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <div style="display: block;" class="bg-transparent text-primary font-weight-bold">
+                                DE</div>
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="Dedrone">Junior</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/sales-engineer-m-f-x/2103">Sales Engineer (m/f/x)</a></h4>
+                </div>
+            </div>
+                                <div class="space-15"></div>
+                <div class="border_black"></div>
+                <div class="space-15"></div>
+                                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <img title="iRobot" src="https://api.roboexpress.net/api/fileupload/show/10/35/logo/1656694191WGz1uYnYfj.png" class="f-job-company-img rounded-50" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" loading="lazy">
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="iRobot">Expert</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/manager-of-field-testing/2083">Manager of Field Testing</a></h4>
+                </div>
+            </div>
+                                <div class="space-15"></div>
+                <div class="border_black"></div>
+                <div class="space-15"></div>
+                                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <img title="Bosch" src="https://api.roboexpress.net/api/fileupload/show/10/35/logo/16566919572nRSoObsKB.png" class="f-job-company-img rounded-50" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" loading="lazy">
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="Bosch">Senior</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/warehouse-profiling-slotting-analystfull-time/2082">Warehouse Profiling &amp; Slotting AnalystFull-time</a></h4>
+                </div>
+            </div>
+                                <div class="space-15"></div>
+                <div class="border_black"></div>
+                <div class="space-15"></div>
+                                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <img title="General Motor" src="https://api.roboexpress.net/api/fileupload/show/10/35/logo/1656693227O35GlvrClJ.png" class="f-job-company-img rounded-50" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" loading="lazy">
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="General Motor">Senior</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/gm-finance-analyst/2079">한국GM] Finance Analyst (신입/경력)</a></h4>
+                </div>
+            </div>
+                                <div class="space-15"></div>
+                <div class="border_black"></div>
+                <div class="space-15"></div>
+                                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <div style="display: block;" class="bg-transparent text-primary font-weight-bold">
+                                SK</div>
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="Skydio">Internship</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/manager-global-tax/2072">Manager, Global Tax</a></h4>
+                </div>
+            </div>
+                                <div class="space-15"></div>
+                <div class="border_black"></div>
+                <div class="space-15"></div>
+                                        <div class="single_post single_post_job d-flex align-items-center">
+                <div class="circle-img mr-3">
+                    <div class="f-job-company-logo mr-2 d-block col-1">
+                                                        <div style="display: block;" class="bg-transparent text-primary font-weight-bold">
+                                FR</div>
+                                                </div>
+                </div>
+                <div class="single_post_text">
+                    <div class="meta2">
+                        <a href="#" title="FreeFly">Junior</a>
+                        <a>December 25, 2022</a>
+                    </div>
+                    <h4><a href="https://beta.roboexpress.net/job/drone-software-engineer-drone-program-alta-x/2019">Drone Software Engineer - Drone Program (Alta X)</a></h4>
+                </div>
+            </div>
+                                </div>
+</div>
+</div>
+             <div class="mt-10">
+                 <!-- News - Square Ads 01 -->
+                 <!-- NS - Square -->
+ <ins class="adsbygoogle" style="display: block; height: 0px;" data-ad-client="ca-pub-4140691985442484" data-ad-slot="7606840662" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_2_host" style="border: none; height: 0px; width: 416px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 416px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="416" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4140691985442484&amp;output=html&amp;h=280&amp;slotname=7606840662&amp;adk=3467420624&amp;adf=190509427&amp;pi=t.ma~as.7606840662&amp;w=416&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1671987991&amp;rafmt=1&amp;format=416x280&amp;url=https%3A%2F%2Fbeta.roboexpress.net%2Fnews&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS4xMjUiLFtdLGZhbHNlLG51bGwsIjY0IixbWyJOb3Q_QV9CcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTA4LjAuNTM1OS4xMjUiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMDguMC41MzU5LjEyNSJdXSxmYWxzZV0.&amp;dt=1671987990870&amp;bpp=2&amp;bdt=874&amp;idt=670&amp;shv=r20221207&amp;mjsv=m202212070101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D68d4df7153a89162-224be061b7d80015%3AT%3D1670077712%3AS%3DALNI_MZUJj9ZTPV2A37W3ioxhwJBXK4vqg&amp;gpic=UID%3D00000b88c9b06513%3AT%3D1670077712%3ART%3D1671984090%3AS%3DALNI_MZ1_kMZ-GO9_FbeITJtc6YCRuwxNQ&amp;prev_fmts=0x0%2C416x280&amp;nras=1&amp;correlator=3740722254707&amp;frm=20&amp;pv=1&amp;ga_vid=716343474.1670077713&amp;ga_sid=1671987991&amp;ga_hid=1475164430&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=9&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=974&amp;ady=1773&amp;biw=1483&amp;bih=880&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759842%2C42531706%2C44778780%2C31071276%2C44780792&amp;oid=2&amp;pvsid=363476049546132&amp;tmod=1077827541&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fbeta.roboexpress.net%2Fblog%3Fcat%255B%255D%3DRESOURCE&amp;eae=0&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1040%2C1500%2C880&amp;vis=1&amp;rsz=o%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;fsb=1&amp;xpc=Rl3ecHrHND&amp;p=https%3A//beta.roboexpress.net&amp;dtd=679" data-google-container-id="a!3" data-google-query-id="CM_v7NKglfwCFYoFXAodMiIBLw" data-load-complete="true"></iframe></div></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+
+             </div>
+             <div class="blog-list w_c_blog_customize">
+<div class="space-30"></div>
+<h2 class="widget-title">Featured blogs</h2>
+        <div class="blog-item shadow-min3 p-5 mb-5">
+        <div class="image mb-2">
+            <a href="https://beta.roboexpress.net/blog/how-to-prepare-for-the-lsat/375?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Fallon">
+                <img class="pull-left" src="https://beta.roboexpress.net/assets/38/img/no-photo.png" width="100%" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+            </a>
+        </div>
+        <div class="details">
+            <a href="https://beta.roboexpress.net/blog/how-to-prepare-for-the-lsat/375?utm_medium=blog&amp;utm_source=TIP&amp;utm_campaign=Fallon"><b>How To Prepare For The LSAT</b></a>
+            <p class="text-dark-65">
+                As a student, you've had to sit many tests, and after years of exams, tests, and quizzes, the LSAT may...
+            </p>
+        </div>
+    </div>
+        <div class="blog-item shadow-min3 p-5 mb-5">
+        <div class="image mb-2">
+            <a href="https://beta.roboexpress.net/blog/what-is-a-common-living/369?utm_medium=blog&amp;utm_source=CASESTUDY&amp;utm_campaign=LiubovKior">
+                <img class="pull-left" src="https://api.roboexpress.net/api/fileupload/show/10/35/blog/img_thumb_1655310499YBoPWgIgTc.png" width="100%" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+            </a>
+        </div>
+        <div class="details">
+            <a href="https://beta.roboexpress.net/blog/what-is-a-common-living/369?utm_medium=blog&amp;utm_source=CASESTUDY&amp;utm_campaign=LiubovKior"><b>What is a common living</b></a>
+            <p class="text-dark-65">
+                
+            </p>
+        </div>
+    </div>
+</div>
+             <div class="space-10"></div>
+             <h2 class="widget-title">Most viewed</h2>
+                        <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-drones-win-good-design-award-2022-autel-robotics/515">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/11/11/2022111114058628.jpeg" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-drones-win-good-design-award-2022-autel-robotics/515">Autel Robotics Drones Win GOOD DESIGN AWARD 2022-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/what-to-expect-evo-ii-v1-v2-series-support-autel-robotics/516">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2021/09/02/道通智能无人机.jpg" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/what-to-expect-evo-ii-v1-v2-series-support-autel-robotics/516">What to Expect: EVO II V1 &amp; V2 Series Support -Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/see-autel-dragonfish-pros-capabilities-at-indo-defence-expo-2022-autel-robotics/518">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/10/19/2022101914007798.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/see-autel-dragonfish-pros-capabilities-at-indo-defence-expo-2022-autel-robotics/518">See Autel Dragonfish Pro's Capabilities At Indo Defence Expo 2022-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-at-ces-2023-meet-max-reach-new-frontiers-autel-robotics/512">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/12/08/2022120811345385.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-at-ces-2023-meet-max-reach-new-frontiers-autel-robotics/512">Autel Robotics at CES 2023: Meet Max, Reach New Frontiers-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-drones-on-sale-for-black-friday-autel-robotics/517">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/11/03/2022110315411236.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-drones-on-sale-for-black-friday-autel-robotics/517">Autel Drones on Sale for Black Friday-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-reaches-mediamarkts-75-stores-to-create-offline-shopping-experience-in-european-market-autel-robotics/519">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/10/17/2022101720478902.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/autel-robotics-reaches-mediamarkts-75-stores-to-create-offline-shopping-experience-in-european-market-autel-robotics/519">Autel Robotics Reaches MediaMarkt’s 75 Stores to Create Offline Shopping Experience in European Market-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/intense-training-for-demanding-industries-autel-robotics/522">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/10/07/2022100716205381.png" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/intense-training-for-demanding-industries-autel-robotics/522">Intense Training for Demanding Industries-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                        <div class="space-15"></div>
+            <div class="border_black"></div>
+            <div class="space-15"></div>
+                            <div class="single_post widgets_small">
+            <div class="post_img">
+                <div class="img_wrap">
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/jon-mcbride-takes-new-role-as-vp-of-technology-and-training-at-autel-robotics-autel-robotics/523">
+                        <img src="https://www.autelrobotics.com/userfiles/images/2022/10/07/2022100715498851.jpg" onerror="this.src='https://beta.roboexpress.net/assets/38/img/no-photo.png'" alt="" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="single_post_text">
+                <h4>
+                    <a target="_blank" href="https://beta.roboexpress.net/news/story/jon-mcbride-takes-new-role-as-vp-of-technology-and-training-at-autel-robotics-autel-robotics/523">Jon McBride Takes New Role as VP of Technology and Training at Autel Robotics-Autel Robotics</a>
+                                        </h4>
+                <div class="date-label">Dec 14, 2022</div>
+            </div>
+        </div>
+                                             <div class="mt-10">
+                 <!-- News - Square Ads 02 -->
+                 <!-- NS - Square -->
+ <ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-4140691985442484" data-ad-slot="7606840662" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_3_host" style="border: none; height: 280px; width: 416px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+ <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
+
+             </div>
+         </div>
+     </div>
+ </div>
+</section>
 <footer class="jobguru-footer-area">
 <div class="footer-top section_50">
     <div class="container">
@@ -525,22 +638,23 @@ nav.blog-categories {
                 <div class="single-footer-widget">
                     <div class="footer-logo mb-2">
                         <a href="https://beta.roboexpress.net">
-                            <img src="https://beta.roboexpress.net/assets/16/img/logo-2.png?v=202200822" alt="Robo Express - Beta" width="96">
+                            <img src="https://beta.roboexpress.net/assets/38/img/logo.svg" alt="Fundgates - Beta">
                         </a>
                     </div>
                     <ul>
                         <li class="m-0 mb-1 mt-3"><a class="text-gray" href="mailto:<Brighter Gates Team>contact@brightergates.com"><i class="fa fa-envelope me-2"></i>contact@brightergates.com</a>
                         </li>
-                        <li class="m-0 mb-1"><span class="text-gray"><i class="fa fa-copyright me-2"></i>This website is a product by Brighter Gates AB</span></li>
+                        <li class="m-0 mb-1"><span class="text-gray"><i class="fa fa-copyright me-2"></i>This website is a product by Brighter Gates AB</span>
+                        </li>
                         <li class="m-0 mb-1"><span class="text-gray"><i class="fa fa-map-marker me-2"></i>Portlidervagen 2, 724 80, Vasteras, Sweden</span></li>
                     </ul>
                     <ul class="footer-social">
                         <li><a href="#" class="fb me-1">
-                            <img src="https://beta.roboexpress.net/assets/16/img/facebook.png" alt="facebook fanpage" loading="lazy">
-                        </a></li>
+                                <img src="https://beta.roboexpress.net/assets/38/img/facebook.png" alt="facebook fanpage" loading="lazy">
+                            </a></li>
                         <li><a href="#" class="linkedin">
-                            <img src="https://beta.roboexpress.net/assets/16/img/linkedin.png" alt="linkedin page" loading="lazy">
-                        </a></li>
+                                <img src="https://beta.roboexpress.net/assets/38/img/linkedin.png" alt="linkedin page" loading="lazy">
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -550,11 +664,13 @@ nav.blog-categories {
                         <div class="single-footer-widget">
                             <h3>Job Seeker</h3>
                             <ul>
-                                <li><a href="https://beta.roboexpress.net/job/find-jobs">Job</a></li>
-                                <li><a href="https://beta.roboexpress.net/company/find-company">Employer</a></li>
+                                <li><a href="https://beta.roboexpress.net/company/find-company">University</a>
+                                </li>
+                                <li><a href="https://beta.roboexpress.net/job/find-jobs">Scholarship</a></li>
                                 <li><a href="https://beta.roboexpress.net/blog"> Blog</a></li>
                                 <li><a href="https://beta.roboexpress.net/news"> News</a></li>
-                                                                    <li><a href="https://beta.roboexpress.net/subscribe"> Subscribe</a></li>
+                                                                    <li><a href="https://beta.roboexpress.net/subscribe">
+                                        Subscribe</a></li>
                             </ul>
                         </div>
                     </div>
@@ -562,20 +678,22 @@ nav.blog-categories {
                         <div class="single-footer-widget">
                             <h3>Employer</h3>
                             <ul>
-                                <li><a href="https://beta.roboexpress.net/job/job-post">Post a job</a>
+                                <li><a href="https://beta.roboexpress.net/content-marketing">Content Marketing</a>
+                                </li>
+                                                                        <li><a href="https://beta.roboexpress.net/price">Price</a>
+                                    </li>
+                                                                    <li><a href="https://beta.roboexpress.net/job/job-post">Post a job</a>
                                 </li>
                                 <li><a href="https://beta.roboexpress.net/blog-post/post/create">Post blog</a>
                                 </li>
                                 <li><a href="https://beta.roboexpress.net/news-post/post/create">Post news</a>
-                                </li>
-                                <li><a href="https://beta.roboexpress.net/content-marketing">Content Marketing</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="single-footer-widget">
-                            <h3>&nbsp;</h3>
+                            <h3>Info</h3>
                             <ul>
                                 <li><a href="https://beta.roboexpress.net/about-us">About us</a>
                                 </li>
@@ -633,12 +751,12 @@ var baseFileUrlJob_Show = "http://10.128.0.4:8022/api/";
 
 <!--jquery-ui js-->
 
-<script src="https://beta.roboexpress.net/assets/00/js/jquery-ui-1.13.1.min.js"></script>
+<script src="https://beta.roboexpress.net/assets/00/js/jquery-ui.min.js"></script>
 <script src="https://beta.roboexpress.net/assets/00/js/toastr.min.js"></script>
 <!--Main js-->
-<script src="https://beta.roboexpress.net/assets/16/js/main.js?v=20220627"></script><div class="btntoTop"></div>
+<script src="https://beta.roboexpress.net/assets/00/js/main.js?v=20220619"></script>
 <!-- Click menu -->
-<script src="https://beta.roboexpress.net/assets/16/js/clickmenu.js?v=202200812"></script>
+<script src="https://beta.roboexpress.net/assets/38/js/clickmenu.js?v=202200812"></script>
 <div class="btntoTop"><i class="fa fa-chevron-up"></i></div>
 <script>
 
@@ -680,105 +798,37 @@ function showToastrMessage(msgType, msgText) {
         $(".alert-dismissible").fadeTo(3000, 500).slideUp(500, function() {
             $(".alert-dismissible").alert('close');
         });
-    });
-</script>
-    <!-- Infinity Loadmore Script -->
 
-<!-- JS | jquery plugin collection for this theme (infinitescroll) -->
-<script src="https://beta.roboexpress.net/assets/16/blog/js/jquery-plugin-infinitescroll.js"></script>
-<script>
-    //$(document).ready(function() {
-    jQuery(document).ready(function($) {
-        var APP_URL = baseUrl; // using for old js from aca
-        // main content container
-        var $infinityload_container_blog = $('#grid_blog');
+        $(document).on('click', '#btn_search_news', function(e) {
 
-        // Infinite Scroll
-        $infinityload_container_blog.infinitescroll({
-                //debug         : true,
-                loading: {
-                    finishedMsg: '<i class="fa fa-check"></i>',
-                    msgText: 'Loading',
-                    img: APP_URL + "/assets/16/img/preloader_1.gif",
-                    speed: 'normal'
-                },
-                state: {
-                    isDone: false
-                },
-                nextSelector: "#load-next-blogs a", // NEXT link (to page 2)
-                navSelector: "#load-next-blogs", // paged navigation (it will be hidden)
-                itemSelector: "#grid_blog > .col-lg-3", // selector for all items you'll retrieve
-                //behavior: 'twitter',
-            },
-            function(newElements) {
-                $infinityload_container_blog.find('#infscr-loading').remove();
-                $('#load-next-blogs').show(); // unhide load more btn
-            });
-
-        // Pause Infinite Scroll
-        $(window).unbind('.infscr');
-
-        // Resume Infinite Scroll
-        $('#load-next-blogs a').click(function() {
-            $infinityload_container_blog.infinitescroll('retrieve');
-            return false;
+            e.preventDefault();
+            e.stopPropagation();
+            searchnews();
         });
-    });
-</script>
+        $(document).on('keydown', '#keyword', function(e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                e.stopPropagation();
+                searchnews();
+            }
+        });
 
-
-<script>
-jQuery(document).ready(function($) {
-
-    $('#divBlogSearch a').on('click', function(e) {
-        searchBlog();
-        e.stopPropagation();
-        e.preventDefault();
-    });
-    $('#keyword').on('keyup', function(e) {
-        if (e.keyCode == 13 && e.target.value) searchBlog();
-    });
-
-    $('#btnSearch').on('click', function(e) {
-        searchBlog();
-    });
-
-    // begin search
-    function searchBlog() {
-        var sel_cat = getDataControl('text', $('#sel_cat').val());
-        var kw = getDataControl('text', $('#keyword').val());
-        var search_paras = 'cat%5B%5D=' + encodeURIComponent(sel_cat) + '&keyword=' + encodeURIComponent(
-        kw);
-        var urlFilter = baseUrl + '/blog';
-        if (search_paras != "") {
-            urlFilter = urlFilter + '?' + search_paras;
-            //console.log(urlFilter);
-            window.location.href = urlFilter;
+        function searchnews() {
+            var keyword = $('#keyword').val();
+            if (keyword && keyword.length > 2) {
+                window.location = "https://beta.roboexpress.net/news/show/search" + "?keyword=" +
+                    encodeURIComponent(
+                        keyword);
+            }
         }
-    }
-
-    // common func to get data control
-    function getDataControl(type, data) {
-        if (typeof(data) != 'undefined') {
-            //console.log(data);
-            return data;
-        } else
-            return '';
-    }
-
-    $(document).on('click', '.b-d-tag-category', function(e) {
-        console.log($(this).text());
-        $('#keyword').val($(this).text());
-        searchBlog();
     });
-});
 </script>
-<div class="js-cookie-consent cookie-consent" style="display: none;">
+    <div class="js-cookie-consent cookie-consent">
 <div class="container px-6">
     <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-8 col-lg-8">
             <p class="ml-3 text-yellow-600 cookie-consent__message">
-                This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our <a href="/terms-conditions">Privacy Policy</a>, and our <a href="/terms-conditions">Terms and Conditions</a>. Your use of Robo Express - Beta’s Products and Services, is subject to these policies and terms.<br><strong>If you do not use the cookie, some functions may not work properly.</strong>
+                This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our <a href="/terms-conditions">Privacy Policy</a>, and our <a href="/terms-conditions">Terms and Conditions</a>. Your use of Fundgates - Beta’s Products and Services, is subject to these policies and terms.<br><strong>If you do not use the cookie, some functions may not work properly.</strong>
 
             </p>
         </div>
@@ -802,7 +852,7 @@ jQuery(document).ready(function($) {
         const COOKIE_DOMAIN = 'beta.roboexpress.net';
 
         function consentWithCookies() {
-            setCookie('ns_16_cookie_consent', COOKIE_VALUE, 7300);
+            setCookie('ns_38_cookie_consent', COOKIE_VALUE, 7300);
             hideCookieDialog();
         }
 
@@ -828,7 +878,7 @@ jQuery(document).ready(function($) {
                 + ';samesite=lax';
         }
 
-        if (cookieExists('ns_16_cookie_consent')) {
+        if (cookieExists('ns_38_cookie_consent')) {
             hideCookieDialog();
         }
 
@@ -851,4 +901,4 @@ jQuery(document).ready(function($) {
 
 
 
-<div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div><iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe></body>
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4140691985442484&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1671987991&amp;plat=1%3A16777216%2C3%3A16%2C4%3A16%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fbeta.roboexpress.net%2Fnews&amp;ea=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA4LjAuNTM1OS4xMjUiLFtdLGZhbHNlLG51bGwsIjY0IixbWyJOb3Q_QV9CcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTA4LjAuNTM1OS4xMjUiXSxbIkdvb2dsZSBDaHJvbWUiLCIxMDguMC41MzU5LjEyNSJdXSxmYWxzZV0.&amp;dt=1671987990865&amp;bpp=3&amp;bdt=869&amp;idt=588&amp;shv=r20221207&amp;mjsv=m202212070101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D68d4df7153a89162-224be061b7d80015%3AT%3D1670077712%3AS%3DALNI_MZUJj9ZTPV2A37W3ioxhwJBXK4vqg&amp;gpic=UID%3D00000b88c9b06513%3AT%3D1670077712%3ART%3D1671984090%3AS%3DALNI_MZ1_kMZ-GO9_FbeITJtc6YCRuwxNQ&amp;nras=1&amp;correlator=3740722254707&amp;frm=20&amp;pv=2&amp;ga_vid=716343474.1670077713&amp;ga_sid=1671987991&amp;ga_hid=1475164430&amp;ga_fc=1&amp;u_tz=-300&amp;u_his=9&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1040&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1483&amp;bih=880&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759842%2C42531706%2C44778780%2C31071276%2C44780792&amp;oid=2&amp;pvsid=363476049546132&amp;tmod=1077827541&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fbeta.roboexpress.net%2Fblog%3Fcat%255B%255D%3DRESOURCE&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1040%2C1500%2C880&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=622" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div><iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body>

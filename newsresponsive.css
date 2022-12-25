@@ -39,11 +39,11 @@
     .menuRight span {
       font-size: 30px;
       cursor: pointer;
-      color: var(--bs-primary);
+      color: #fff;
       display: none;
     }
     header.jobguru-header-area.stick-top.forsticky.sticky .menuRight span {
-        color: var(--bs-primary);
+        color: #fff;
     }
     .sidenav {
       height: 100%;
