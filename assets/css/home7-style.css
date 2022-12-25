@@ -158,6 +158,7 @@ p {
 header .signIn-btn {
   display: inline-block;
   padding: 4px 20px;
+  padding-bottom: 0;
   text-transform: capitalize;
   color: var(--bs-primary) !important;
   font-family: "Montserrat", sans-serif;
@@ -675,12 +676,6 @@ header ul li a {
   color: #000;
   transition: 0.2s;
 }
-header ul li.active a.has-children-link::after {
-  width: 100%;
-}
-header ul li.active a.has-children-link {
-  color: var(--bs-primary);
-}
 .header-right-menu ul li{
   padding: 0;
 }
@@ -735,6 +730,12 @@ header ul li.active a.has-children-link {
   color: #000 !important;
 }
 
+header ul li.active a.has-children-link::after {
+  width: 100%;
+}
+header ul li.active a.has-children-link {
+  color: var(--bs-primary) !important;
+}
 .post-jobs {
   display: inline-block;
     padding: 8px 25px;
@@ -789,15 +790,15 @@ header ul li.active a.has-children-link {
 .subscriber__title {
   color: #fff;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 48px;
 }
 .banner__sub-title {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 24px;
 }
 .subscriber__sub-title {
   color: #fff;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .banner-single-slider {
@@ -2019,6 +2020,9 @@ Responsive
 }
 .country-col {
   width: 50%;
+}
+header .signIn-btn {
+  padding-bottom: 4px;
 }
   .jobguru-btn, .jobguru-btn-left {
     display: block;
